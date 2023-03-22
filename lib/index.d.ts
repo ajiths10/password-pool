@@ -1,1 +1,1 @@
-export declare function generate(prefix?: string): string;
+export declare const generate: (prefix?: string) => string;

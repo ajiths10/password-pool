@@ -1,4 +1,4 @@
-export function generate(prefix = "") {
+export const generate = (prefix = "") => {
   var pass = prefix;
   var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$";
 
@@ -8,4 +8,4 @@ export function generate(prefix = "") {
   }
 
   return pass;
-}
+};
