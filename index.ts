@@ -1,4 +1,4 @@
-function generate(prefix = "") {
+export function generate(prefix = "") {
   var pass = prefix;
   var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$";
 
@@ -9,5 +9,3 @@ function generate(prefix = "") {
 
   return pass;
 }
-
-module.exports = generate;
