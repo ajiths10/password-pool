@@ -1,8 +1,5 @@
-type prefix = string | number | undefined;
-type length = number;
-
-const generate = (prefix: prefix = "", l: length = 8): string => {
-  var pass = prefix;
+const generate = (l: number = 8): string => {
+  var pass = "";
   var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$";
 
   for (let i = 1; i <= l; i++) {
@@ -10,7 +7,7 @@ const generate = (prefix: prefix = "", l: length = 8): string => {
     pass += str.charAt(char);
   }
 
-  return pass as string;
+  return pass;
 };
 
 module.exports = generate;
