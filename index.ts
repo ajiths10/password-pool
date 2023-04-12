@@ -1,10 +1,11 @@
-const generate = (l: number = 8): string => {
+const generate = (l: number = 8) => {
   let pass = "";
   const str =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$";
+  const strLen = str.length;
 
-  for (let i = 1; i <= l; i++) {
-    let char = Math.floor(Math.random() * str.length + 1);
+  for (let i = 0; i < l; i++) {
+    let char = Math.floor(Math.random() * strLen);
     pass += str.charAt(char);
   }
 
